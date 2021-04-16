@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>TestNG:  Posts scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Posts scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 16 20:58:29 EEST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6221 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>posts </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='gorest.scenarios.PostsScenario.createUserPost()'><b>createUserPost</b><br>Test class: gorest.scenarios.PostsScenario<br>Parameters: PostsRequestDTO(title=Test title, body=Test body)<br/>
+<a href="#Output-424732838" onClick='toggleBox("Output-424732838", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-424732838" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-424732838">
+Creating user<br/>
+Creating new post<br/>
+Deleting user<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>gorest.scenarios.PostsScenario@60f82f98</td></tr>
+<tr>
+<td title='gorest.scenarios.PostsScenario.getAllPosts()'><b>getAllPosts</b><br>Test class: gorest.scenarios.PostsScenario<br/>
+<a href="#Output-1827303532" onClick='toggleBox("Output-1827303532", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1827303532" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1827303532">
+Get all posts<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>gorest.scenarios.PostsScenario@60f82f98</td></tr>
+<tr>
+<td title='gorest.scenarios.PostsScenario.getUserPosts()'><b>getUserPosts</b><br>Test class: gorest.scenarios.PostsScenario<br/>
+<a href="#Output-1251897263" onClick='toggleBox("Output-1251897263", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1251897263" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1251897263">
+Get posts for user_id: 51<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>gorest.scenarios.PostsScenario@60f82f98</td></tr>
+</table><p>
+</body>
+</html>

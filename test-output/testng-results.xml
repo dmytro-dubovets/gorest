@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[Creating and deleting new user]]>
+    </line>
+    <line>
+      <![CDATA[Get all users]]>
+    </line>
+    <line>
+      <![CDATA[Creating user]]>
+    </line>
+    <line>
+      <![CDATA[Updating information about user after creating]]>
+    </line>
+    <line>
+      <![CDATA[Deleting user]]>
+    </line>
+    <line>
+      <![CDATA[Creating user]]>
+    </line>
+    <line>
+      <![CDATA[Creating new post]]>
+    </line>
+    <line>
+      <![CDATA[Deleting user]]>
+    </line>
+    <line>
+      <![CDATA[Get all posts]]>
+    </line>
+    <line>
+      <![CDATA[Get posts for user_id: 51]]>
+    </line>
+  </reporter-output>
+  <suite name="Users and posts scenarios" duration-ms="15142" started-at="2021-04-16T17:58:20Z" finished-at="2021-04-16T17:58:35Z">
+    <groups>
+      <group name="posts">
+        <method signature="PostsScenario.createUserPost(gorest.dto.users.posts.request.PostsRequestDTO)[pri:0, instance:gorest.scenarios.PostsScenario@60f82f98]" name="createUserPost" class="gorest.scenarios.PostsScenario"/>
+        <method signature="PostsScenario.getAllPosts()[pri:0, instance:gorest.scenarios.PostsScenario@60f82f98]" name="getAllPosts" class="gorest.scenarios.PostsScenario"/>
+        <method signature="PostsScenario.getUserPosts()[pri:0, instance:gorest.scenarios.PostsScenario@60f82f98]" name="getUserPosts" class="gorest.scenarios.PostsScenario"/>
+      </group> <!-- posts -->
+      <group name="users">
+        <method signature="UsersScenario.createNewUserAndDelete(gorest.dto.users.users.request.UsersRequestDTO)[pri:0, instance:gorest.scenarios.UsersScenario@b684286]" name="createNewUserAndDelete" class="gorest.scenarios.UsersScenario"/>
+        <method signature="UsersScenario.getAllUsers()[pri:0, instance:gorest.scenarios.UsersScenario@b684286]" name="getAllUsers" class="gorest.scenarios.UsersScenario"/>
+        <method signature="UsersScenario.updateUser(gorest.dto.users.users.request.UsersRequestDTO)[pri:0, instance:gorest.scenarios.UsersScenario@b684286]" name="updateUser" class="gorest.scenarios.UsersScenario"/>
+      </group> <!-- users -->
+    </groups>
+    <test name="Users scenarios" duration-ms="8910" started-at="2021-04-16T17:58:20Z" finished-at="2021-04-16T17:58:28Z">
+      <class name="gorest.scenarios.UsersScenario">
+        <test-method status="PASS" signature="createNewUserAndDelete(gorest.dto.users.users.request.UsersRequestDTO)[pri:0, instance:gorest.scenarios.UsersScenario@b684286]" name="createNewUserAndDelete" duration-ms="4039" started-at="2021-04-16T20:58:20Z" data-provider="createUser" finished-at="2021-04-16T20:58:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UsersRequestDTO(name=Dmytro Dubovets, email=testing@email.com, gender=Male, status=Active)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Creating and deleting new user]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createNewUserAndDelete -->
+        <test-method status="PASS" signature="getAllUsers()[pri:0, instance:gorest.scenarios.UsersScenario@b684286]" name="getAllUsers" duration-ms="1219" started-at="2021-04-16T20:58:24Z" finished-at="2021-04-16T20:58:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Get all users]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAllUsers -->
+        <test-method status="PASS" signature="updateUser(gorest.dto.users.users.request.UsersRequestDTO)[pri:0, instance:gorest.scenarios.UsersScenario@b684286]" name="updateUser" duration-ms="3641" started-at="2021-04-16T20:58:25Z" data-provider="updateUser" finished-at="2021-04-16T20:58:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UsersRequestDTO(name=Noname Noname, email=testing@email.com, gender=Female, status=Active)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Creating user]]>
+            </line>
+            <line>
+              <![CDATA[Updating information about user after creating]]>
+            </line>
+            <line>
+              <![CDATA[Deleting user]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+      </class> <!-- gorest.scenarios.UsersScenario -->
+    </test> <!-- Users scenarios -->
+    <test name="Posts scenarios" duration-ms="6221" started-at="2021-04-16T17:58:29Z" finished-at="2021-04-16T17:58:35Z">
+      <class name="gorest.scenarios.PostsScenario">
+        <test-method status="PASS" signature="createUserPost(gorest.dto.users.posts.request.PostsRequestDTO)[pri:0, instance:gorest.scenarios.PostsScenario@60f82f98]" name="createUserPost" duration-ms="3869" started-at="2021-04-16T20:58:29Z" data-provider="newPost" finished-at="2021-04-16T20:58:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PostsRequestDTO(title=Test title, body=Test body)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Creating user]]>
+            </line>
+            <line>
+              <![CDATA[Creating new post]]>
+            </line>
+            <line>
+              <![CDATA[Deleting user]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createUserPost -->
+        <test-method status="PASS" signature="getAllPosts()[pri:0, instance:gorest.scenarios.PostsScenario@60f82f98]" name="getAllPosts" duration-ms="1175" started-at="2021-04-16T20:58:32Z" finished-at="2021-04-16T20:58:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Get all posts]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAllPosts -->
+        <test-method status="PASS" signature="getUserPosts()[pri:0, instance:gorest.scenarios.PostsScenario@60f82f98]" name="getUserPosts" duration-ms="1175" started-at="2021-04-16T20:58:34Z" finished-at="2021-04-16T20:58:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Get posts for user_id: 51]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getUserPosts -->
+      </class> <!-- gorest.scenarios.PostsScenario -->
+    </test> <!-- Posts scenarios -->
+  </suite> <!-- Users and posts scenarios -->
+</testng-results>

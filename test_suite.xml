@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Users and posts scenarios" parallel="false">
+    <test name="Users scenarios">
+        <groups>
+            <run>
+                <include name="users"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="gorest.scenarios.UsersScenario"/>
+        </classes>
+    </test>
+    <test name="Posts scenarios">
+        <groups>
+            <run>
+                <include name="posts"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="gorest.scenarios.PostsScenario"/>
+        </classes>
+    </test>
+</suite>
